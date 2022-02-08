@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- Navbar for City -->
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="city-nav" style="background-color: aliceblue">
+  <a class="navbar-brand" href="allsites.html"><b>Metro Cebu Vaccination Drive</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="allsites.html">All Vaccine Sites <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="allsites.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Choose a City
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="index.html#Cebu">Cebu City</a>
+          <a class="dropdown-item" href="index.html#Mandaue">Mandaue City</a>
+          <a class="dropdown-item" href="index.html#Lapulapu">Lapu-lapu City</a>
+          <a class="dropdown-item" href="index.html#Talisay">Talisay City</a>
+          <a class="dropdown-item" href="index.html#Minglanilla">Minglanilla</a>
+          <a class="dropdown-item" href="index.html#Naga">Naga City</a>
+          <a class="dropdown-item" href="index.html#SanFernando">San Fernando</a>
+          <a class="dropdown-item" href="index.html#Carcar">Carcar City</a>
+          <a class="dropdown-item" href="index.html#Consolacion">Consolacion</a>
+          <a class="dropdown-item" href="index.html#Liloan">Liloan</a>
+          <a class="dropdown-item" href="index.html#Compostela">Compostela</a>
+          <a class="dropdown-item" href="index.html#Danao">Danao City</a>
+          <a class="dropdown-item" href="index.html#Cordova">Cordova</a>
+    
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="booking.html#booking-form">Book a Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="qrcard.html">Generate QR Card</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="emergency.html">Emergency Hotlines</a>
+      </li>
+    
+    
+    </ul>
+    
+  </div>
+</nav><br><br> 
+
+
+<!-- Map -->
+
+<h4 id="Cebu">
+<img src="/Images/logo_city_cebu.png" height="60px"  alt="">
+Cebu City Vaccine Location</h4>
+<div id="map"></div>
+
+<h4 id="Mandaue">
+<img src="/Images/logo_city_mandaue.png" height="60px"  alt="">
+Mandaue City Vaccine Location</h4>
+<div id="map2"></div>
+
+<h4 id="Lapulapu">
+  <img src="/Images/logo_city_lapu.jpeg" height="60px"  alt="">
+  Lapu-Lapu City Vaccine Location</h4>
+<div id="map3"></div>
+
+<h4 id="Talisay">
+  <img src="/Images/logo_city_talisay.png" height="60px"  alt="">
+  Talisay City Vaccine Location</h4>
+<div id="map4"></div>
+
+<h4 id="Minglanilla">
+  <img src="/Images/logo_city_minglanilla.jpeg" height="60px"  alt="">
+  Minglanilla Vaccine Location</h4>
+<div id="map5"></div>
+
+<h4 id="Naga">
+  <img src="/Images/logo_city_naga.png" height="60px"  alt="">
+  Naga City Vaccine Location</h4>
+<div id="map6"></div>
+
+<h4 id="SanFernando">
+  <img src="/Images/logo_city_sanfernando.jpeg" height="60px"  alt="">
+  San Fernando Vaccine Location</h4>
+<div id="map7"></div>
+
+<h4 id="Carcar">
+  <img src="/Images/logo_city_carcar.png" height="60px"  alt="">
+  Carcar City Vaccine Location</h4>
+<div id="map8"></div>
+
+<h4 id="Consolacion">
+  <img src="/Images/logo_city_consolacion.gif" height="60px"  alt="">
+  Consolacion Vaccine Location</h4>
+<div id="map9"></div>
+
+<h4 id="Liloan">
+  <img src="/Images/logo_city_liloan.png" height="60px"  alt="">
+  Liloan Vaccine Location</h4>
+<div id="map10"></div>
+
+<h4 id="Compostela">
+  <img src="/Images/logo_city_compostela.jpeg" height="60px"  alt="">
+  Compostela Vaccine Location</h4>
+<div id="map11"></div>
+
+<h4 id="Danao">
+  <img src="/Images/logo_city_danao.png" height="60px"  alt="">
+  Danao City Vaccine Location</h4>
+<div id="map12"></div>
+
+<h4 id="Cordova">
+  <img src="/Images/logo_city_cordova.png" height="60px"  alt="">
+  Cordova Vaccine Location</h4>
+<div id="map13"></div>
+
+
+
+<!-- Footer -->
+
+<nav   id="footer" >
+  <p><b>MetroCebu Vaccination Drive</b> by Dominic Clyde Tampus <br> All Rights Reserved 2021</p>
+  </nav>
+  
+
+
+
+    <!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="script2.js"></script>
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+</html>

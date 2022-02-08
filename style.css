@@ -1,0 +1,89 @@
+
+
+#header {
+    text-align: center;
+}
+
+.btn{
+    position: center;
+}
+
+h4{
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+#city-nav{
+    display: fixed;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+#allmap{
+    height: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#map,#map2,#map3,#map4 {
+    height: 550px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#map5, #map6,#map7,#map8,#map9 {
+    height: 550px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#map10, #map11,#map12,#map13 {
+    height: 550px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#demo-booking-single{
+    height: 500px;
+    width: 500px;
+}
+
+
+#booking-form{
+    padding: 40px;
+}
+
+#qr-form{
+    padding: 40px;
+}
+
+
+#footer{
+    font-size: 15px;
+    background-color: aliceblue;    
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#footer,p{
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
